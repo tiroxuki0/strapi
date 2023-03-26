@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_page_settings",
+  "info": {
+    "singularName": "home-page-setting",
+    "pluralName": "home-page-settings",
+    "displayName": "Home Page Setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "text",
+      "required": true
+    },
+    "interested": {
+      "displayName": "interested",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-setting.interested"
+    },
+    "financial_instruments": {
+      "displayName": "financial_instruments",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-setting.financial-instruments"
+    },
+    "our_partners": {
+      "displayName": "our_partners",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-setting.our-partners"
+    },
+    "our_customers": {
+      "displayName": "our_customers",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-setting.our-customers"
+    },
+    "introduce": {
+      "displayName": "introduce",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page-setting.introduce"
+    },
+    "image_ad": {
+      "displayName": "image_ad",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page-setting.image-ad"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

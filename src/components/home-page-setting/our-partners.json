@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_page_setting_our_partners",
+  "info": {
+    "displayName": "our_partners",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_lists",
+  "info": {
+    "singularName": "blog-list",
+    "pluralName": "blog-lists",
+    "displayName": "Blog list",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    },
+    "subTitle": {
+      "type": "text",
+      "required": true
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
+    },
+    "shares": {
+      "type": "integer",
+      "default": 0
+    },
+    "contents": {
+      "displayName": "contents",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.contents"
+    },
+    "category_lists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category-list.category-list",
+      "mappedBy": "blog_lists"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "comments": {
+      "type": "json",
+      "customField": "plugin::comments.comments"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "timeRead": {
+      "type": "string"
+    },
+    "avgRating": {
+      "type": "decimal",
+      "default": 0
+    },
+    "author_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author-list.author-list",
+      "inversedBy": "blog_lists"
+    },
+    "totalComment": {
+      "type": "integer",
+      "default": 0
+    },
+    "advertiserDisclosure": {
+      "displayName": "Advertiser disclosure",
+      "type": "component",
+      "repeatable": false,
+      "component": "advertiser.advertiser-disclosure"
+    },
+    "showAdvise": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "advise_page_settings",
+  "info": {
+    "singularName": "advise-page-setting",
+    "pluralName": "advise-page-settings",
+    "displayName": "Advise Page Setting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

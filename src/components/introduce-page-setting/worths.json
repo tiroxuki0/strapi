@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_introduce_page_setting_worths",
+  "info": {
+    "displayName": "worths",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "worths": {
+      "type": "component",
+      "repeatable": true,
+      "component": "introduce.worth",
+      "max": 5,
+      "min": 5
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

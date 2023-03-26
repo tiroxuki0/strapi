@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "child_subcates",
+  "info": {
+    "singularName": "child-subcate",
+    "pluralName": "child-subcates",
+    "displayName": "Child subcate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "child_subcates"
+    },
+    "subcate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subcate.subcate",
+      "inversedBy": "child_subcates"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "text",
+      "required": true
+    },
+    "advertiserDisclosure": {
+      "type": "component",
+      "repeatable": false,
+      "component": "advertiser.advertiser-disclosure"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

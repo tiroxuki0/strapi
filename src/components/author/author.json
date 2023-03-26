@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_author_authors",
+  "info": {
+    "displayName": "author",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "authorName": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal",
+      "required": true,
+      "max": 5,
+      "min": 0,
+      "default": 0
+    },
+    "posts": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

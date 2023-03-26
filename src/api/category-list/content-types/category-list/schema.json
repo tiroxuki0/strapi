@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_lists",
+  "info": {
+    "singularName": "category-list",
+    "pluralName": "category-lists",
+    "displayName": "Category list ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "categoryName"
+    },
+    "blog_lists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-list.blog-list",
+      "inversedBy": "category_lists"
+    },
+    "advertisement": {
+      "displayName": "Advertisement",
+      "type": "component",
+      "repeatable": false,
+      "component": "advertisement.advertisement"
+    },
+    "isShowCategory": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

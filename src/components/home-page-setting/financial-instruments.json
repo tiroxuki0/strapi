@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_page_setting_financial_instruments",
+  "info": {
+    "displayName": "financial_instruments",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

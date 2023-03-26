@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_product_other_products",
+  "info": {
+    "displayName": "otherProduct",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

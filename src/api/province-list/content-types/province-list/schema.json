@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "province_lists",
+  "info": {
+    "singularName": "province-list",
+    "pluralName": "province-lists",
+    "displayName": "Province list",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "district_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::district-list.district-list"
+    },
+    "loan_companies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::loan-company.loan-company",
+      "inversedBy": "province_lists"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "province_lists"
+    }
+  }
+}

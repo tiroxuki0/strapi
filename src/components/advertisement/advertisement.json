@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_advertisement_advertisements",
+  "info": {
+    "displayName": "Advertisement",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "advertisement_button": {
+      "displayName": "Advertisement_button",
+      "type": "component",
+      "repeatable": true,
+      "component": "advertisement.advertisement-button",
+      "required": true,
+      "max": 2,
+      "min": 1
+    }
+  }
+}

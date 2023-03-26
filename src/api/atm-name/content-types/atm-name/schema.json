@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atm_names",
+  "info": {
+    "singularName": "atm-name",
+    "pluralName": "atm-names",
+    "displayName": "ATM name",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "atm_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::atm-location.atm-location",
+      "mappedBy": "atm_name"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "atm_names"
+    }
+  }
+}

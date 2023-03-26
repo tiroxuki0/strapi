@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_introduce_timelines",
+  "info": {
+    "displayName": "timeline"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "date",
+      "required": true
+    },
+    "discription": {
+      "type": "string"
+    }
+  }
+}

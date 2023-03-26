@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_introduce_page_setting_mission_visions",
+  "info": {
+    "displayName": "mission_vision",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce.mission"
+    },
+    "vision": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce.mission"
+    }
+  }
+}

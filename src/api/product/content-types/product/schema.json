@@ -1,0 +1,151 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "confirm": {
+      "type": "boolean",
+      "default": false
+    },
+    "favourite": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "protype": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::protype.protype",
+      "inversedBy": "products"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "rating": {
+      "type": "decimal",
+      "max": 5
+    },
+    "review": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "string",
+      "required": true
+    },
+    "Criterias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.criteria"
+    },
+    "comments": {
+      "type": "customField",
+      "customField": "plugin::comments.comments"
+    },
+    "advantages": {
+      "type": "richtext",
+      "required": true
+    },
+    "details": {
+      "type": "richtext",
+      "required": true
+    },
+    "endow": {
+      "type": "richtext"
+    },
+    "contents": {
+      "displayName": "contents",
+      "type": "component",
+      "repeatable": true,
+      "component": "product.contents"
+    },
+    "openAt": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "child_subcates": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::child-subcate.child-subcate",
+      "mappedBy": "products"
+    },
+    "loan": {
+      "type": "biginteger"
+    },
+    "period": {
+      "type": "integer"
+    },
+    "mortgage": {
+      "type": "biginteger"
+    },
+    "income": {
+      "type": "biginteger"
+    },
+    "loan_product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::loan-product.loan-product",
+      "inversedBy": "products"
+    },
+    "atm_names": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::atm-name.atm-name",
+      "inversedBy": "products"
+    },
+    "province_lists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::province-list.province-list",
+      "mappedBy": "products"
+    },
+    "advertiserDisclosure": {
+      "type": "component",
+      "repeatable": false,
+      "component": "advertiser.advertiser-disclosure"
+    },
+    "linkReview": {
+      "type": "string",
+      "required": false
+    },
+    "otherProduct": {
+      "displayName": "otherProduct",
+      "type": "component",
+      "repeatable": true,
+      "component": "product.other-product"
+    }
+  }
+}

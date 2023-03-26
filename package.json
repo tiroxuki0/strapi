@@ -1,0 +1,45 @@
+{
+  "name": "texap-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^1.1.2",
+    "@strapi/plugin-documentation": "^4.4.7",
+    "@strapi/plugin-graphql": "^4.5.2",
+    "@strapi/plugin-i18n": "4.4.7",
+    "@strapi/plugin-seo": "^1.7.7",
+    "@strapi/plugin-users-permissions": "4.4.7",
+    "@strapi/provider-email-nodemailer": "^4.5.4",
+    "@strapi/provider-upload-aws-s3": "^4.4.7",
+    "@strapi/provider-upload-cloudinary": "^4.4.7",
+    "@strapi/strapi": "4.4.7",
+    "better-sqlite3": "7.4.6",
+    "nodemailer": "^6.8.0",
+    "pg": "^8.8.0",
+    "strapi-plugin-comments": "^2.2.1",
+    "strapi-plugin-navigation": "^2.2.2",
+    "strapi-plugin-populate-deep": "^1.1.2",
+    "strapi-plugin-ratings": "^1.1.9",
+    "strapi-plugin-sitemap": "^2.0.8",
+    "strapi-provider-email-smtp": "^1.0.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "c2a4994f-5cfe-42c1-b79c-118c2241f878"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "district_lists",
+  "info": {
+    "singularName": "district-list",
+    "pluralName": "district-lists",
+    "displayName": " District list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "atm_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::atm-location.atm-location",
+      "mappedBy": "district_list"
+    }
+  }
+}

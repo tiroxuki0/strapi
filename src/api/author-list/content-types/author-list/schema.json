@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "author_lists",
+  "info": {
+    "singularName": "author-list",
+    "pluralName": "author-lists",
+    "displayName": "Author List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "avgRating": {
+      "type": "decimal",
+      "default": 0
+    },
+    "totalBlog": {
+      "type": "integer",
+      "required": false,
+      "default": 0
+    },
+    "blog_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-list.blog-list",
+      "mappedBy": "author_list"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "aboutAuthor": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

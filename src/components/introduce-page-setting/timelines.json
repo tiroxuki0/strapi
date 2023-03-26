@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_introduce_page_setting_timelines",
+  "info": {
+    "displayName": "timelines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "timelines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "introduce.timeline"
+    }
+  }
+}

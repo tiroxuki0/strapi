@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_advertiser_advertiser_disclosures",
+  "info": {
+    "displayName": "Advertiser disclosure",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_licenses",
+  "info": {
+    "displayName": "license",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

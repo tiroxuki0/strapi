@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_introduce_page_setting_guards",
+  "info": {
+    "displayName": "guards",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "guards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "introduce.guard"
+    }
+  }
+}

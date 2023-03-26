@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atm_locations",
+  "info": {
+    "singularName": "atm-location",
+    "pluralName": "atm-locations",
+    "displayName": "ATM location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "timeOpen": {
+      "type": "string",
+      "required": true
+    },
+    "linkMap": {
+      "type": "string",
+      "required": true
+    },
+    "atm_name": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::atm-name.atm-name",
+      "inversedBy": "atm_locations"
+    },
+    "district_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::district-list.district-list",
+      "inversedBy": "atm_locations"
+    }
+  }
+}

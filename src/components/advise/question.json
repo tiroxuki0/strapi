@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_advise_questions",
+  "info": {
+    "displayName": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Input",
+        "Onechoice",
+        "Multichoice",
+        "Select",
+        "Score"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "ItemQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "advise.item-question",
+      "max": 5,
+      "min": 1
+    }
+  }
+}

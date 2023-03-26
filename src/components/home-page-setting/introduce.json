@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_home_page_setting_introduces",
+  "info": {
+    "displayName": "introduce",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "mission": {
+      "displayName": "mission",
+      "type": "component",
+      "repeatable": true,
+      "component": "introduce.mission"
+    }
+  }
+}

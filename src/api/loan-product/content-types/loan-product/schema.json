@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loan_products",
+  "info": {
+    "singularName": "loan-product",
+    "pluralName": "loan-products",
+    "displayName": "Loan product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "loan_product"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Sản phẩm vay tiền 1",
+        "Sản phẩm vay tiền 2"
+      ],
+      "default": "Sản phẩm vay tiền 1",
+      "required": true
+    },
+    "AdvertiserDisclosure": {
+      "type": "component",
+      "repeatable": false,
+      "component": "advertiser.advertiser-disclosure"
+    }
+  }
+}

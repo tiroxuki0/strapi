@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_product_criteria",
+  "info": {
+    "displayName": "Criteria",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "criteriaName": {
+      "type": "string",
+      "required": true
+    },
+    "suggestion": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

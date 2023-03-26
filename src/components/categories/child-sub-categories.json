@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_categories_child_sub_categories",
+  "info": {
+    "displayName": "Child sub categories",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

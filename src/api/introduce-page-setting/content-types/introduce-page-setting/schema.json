@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "introduce_page_settings",
+  "info": {
+    "singularName": "introduce-page-setting",
+    "pluralName": "introduce-page-settings",
+    "displayName": "Introduce Page Setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "storys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "introduce.story"
+    },
+    "worths": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce-page-setting.worths"
+    },
+    "mission_vision": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce-page-setting.mission-vision"
+    },
+    "our_team": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce-page-setting.our-team"
+    },
+    "timelines": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce-page-setting.timelines"
+    },
+    "our_partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-setting.our-partners"
+    },
+    "guards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "introduce-page-setting.guards"
+    },
+    "our_customers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-setting.our-customers"
+    },
+    "image_ad": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page-setting.image-ad"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

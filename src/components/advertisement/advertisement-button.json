@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_advertisement_advertisement_buttons",
+  "info": {
+    "displayName": "Advertisement_button",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

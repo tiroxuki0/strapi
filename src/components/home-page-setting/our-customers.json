@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_home_page_setting_our_customers",
+  "info": {
+    "displayName": "our_customers",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "decimal",
+      "required": true,
+      "max": 5,
+      "min": 0
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

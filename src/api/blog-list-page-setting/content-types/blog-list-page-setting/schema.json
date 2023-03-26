@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_list_page_settings",
+  "info": {
+    "singularName": "blog-list-page-setting",
+    "pluralName": "blog-list-page-settings",
+    "displayName": "Blog list page setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

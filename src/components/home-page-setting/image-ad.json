@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_home_page_setting_image_ads",
+  "info": {
+    "displayName": "image_ad",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageDesktop": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "linkAD": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

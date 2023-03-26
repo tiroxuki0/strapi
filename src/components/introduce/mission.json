@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_introduce_missions",
+  "info": {
+    "displayName": "mission",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

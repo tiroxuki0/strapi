@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "tool_calculate_interests",
+  "info": {
+    "singularName": "tool-calculate-interest",
+    "pluralName": "tool-calculate-interests",
+    "displayName": "Tool Calculate Interest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

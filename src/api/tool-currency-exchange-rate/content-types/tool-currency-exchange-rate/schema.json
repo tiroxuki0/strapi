@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "tool_currency_exchange_rates",
+  "info": {
+    "singularName": "tool-currency-exchange-rate",
+    "pluralName": "tool-currency-exchange-rates",
+    "displayName": "Tool Currency Exchange Rate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

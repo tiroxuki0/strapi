@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_dowload_apps",
+  "info": {
+    "displayName": "dowloadApp",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

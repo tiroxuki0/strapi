@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subcates",
+  "info": {
+    "singularName": "subcate",
+    "pluralName": "subcates",
+    "displayName": "Subcate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "child_subcates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::child-subcate.child-subcate",
+      "mappedBy": "subcate"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "currency_lists",
+  "info": {
+    "singularName": "currency-list",
+    "pluralName": "currency-lists",
+    "displayName": "Currency list",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "subName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

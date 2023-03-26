@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "loan_product_settings",
+  "info": {
+    "singularName": "loan-product-setting",
+    "pluralName": "loan-product-settings",
+    "displayName": "Loan product setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "guideTitle": {
+      "type": "string"
+    },
+    "guide": {
+      "displayName": "guide",
+      "type": "component",
+      "repeatable": true,
+      "component": "loan-product.guide",
+      "required": true,
+      "min": 1,
+      "max": 5
+    },
+    "interested": {
+      "displayName": "interested",
+      "type": "component",
+      "repeatable": true,
+      "component": "loan-product.interested",
+      "required": true
+    },
+    "blog_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-list.blog-list"
+    },
+    "imgADDesktop": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imgADMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "linkAD": {
+      "type": "string"
+    }
+  }
+}

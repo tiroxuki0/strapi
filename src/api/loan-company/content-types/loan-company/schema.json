@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loan_companies",
+  "info": {
+    "singularName": "loan-company",
+    "pluralName": "loan-companies",
+    "displayName": "Loan Company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "annualInterest": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "max": 100
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "maximum": {
+      "type": "biginteger",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "debt_purposes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::debt-purpose.debt-purpose",
+      "inversedBy": "loan_companies"
+    },
+    "credit_score": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::credit-score.credit-score",
+      "inversedBy": "loan_companies"
+    },
+    "province_lists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::province-list.province-list",
+      "mappedBy": "loan_companies"
+    }
+  }
+}

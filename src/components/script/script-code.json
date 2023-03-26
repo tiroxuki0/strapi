@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_script_script_codes",
+  "info": {
+    "displayName": "scriptCode",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

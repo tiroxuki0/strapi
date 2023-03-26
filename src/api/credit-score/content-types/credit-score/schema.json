@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "credit_scores",
+  "info": {
+    "singularName": "credit-score",
+    "pluralName": "credit-scores",
+    "displayName": "Credit Score",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "loan_companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::loan-company.loan-company",
+      "mappedBy": "credit_score"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_footer_contacts",
+  "info": {
+    "displayName": "contact",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

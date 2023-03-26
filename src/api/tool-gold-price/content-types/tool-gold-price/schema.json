@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "tool_gold_prices",
+  "info": {
+    "singularName": "tool-gold-price",
+    "pluralName": "tool-gold-prices",
+    "displayName": "Tool Gold Price"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_advise_item_questions",
+  "info": {
+    "displayName": "ItemQuestion",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_introduce_page_setting_our_teams",
+  "info": {
+    "displayName": "our_team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "introduce-page-setting.member"
+    }
+  }
+}

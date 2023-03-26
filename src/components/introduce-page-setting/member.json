@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_introduce_page_setting_members",
+  "info": {
+    "displayName": "member"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "position": {
+      "type": "string"
+    },
+    "discription": {
+      "type": "richtext"
+    }
+  }
+}
